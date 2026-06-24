@@ -1,0 +1,8 @@
+
+.PHONY: build run
+
+build:
+	g++ $(wildcard ./src/*.c) -I./inc/ -o ./bin/server
+
+run: build
+	./bin/server
