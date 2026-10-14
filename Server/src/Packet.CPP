@@ -15,7 +15,7 @@ std::vector<MPacket> SPacket::ToPacketList() {
 
     int i = 0;
     while (i < this->PacketContent.size()) {
-        Contents.insert(Contents.end(), this->PacketContent.substr(i, i + 1452))
+        Contents.insert(Contents.end(), this->PacketContent.substr(i, i + 1452));
         i += 1452;
     }
 
